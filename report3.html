@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+  <head>
+    <meta charset="UTF-8">
+    <title>Montecarlo Method</title>
+    <link rel="stylesheet" href="montecarlo.css">
+
+  </head>
+  <body>
+  <div id="main">
+    <div id="area1" class="area">
+      <p>　2分法</p>
+      <canvas class="myCanvas" id="graph1" width="460" height="460"></canvas>
+      <canvas class="myCanvas" id="graph1b" width="460" height="460"></canvas>
+    </div>
+  </div>
+  <div id="main2">
+    <div id="area2" class="area">
+      <p>　ニュートン法</p>
+      <canvas class="myCanvas" id="graph2" width="460" height="240"></canvas>
+      <canvas class="myCanvas" id="graph2b" width="460" height="240"></canvas>
+    </div>
+  </div>
+  <div id="contents">
+    <div id="panel">
+      <p>許容誤差</p>
+      <input type="radio" name="item" value="0.01" checked="checked">0.01
+      <input type="radio" name="item" value="0.0001">0.0001
+      <input type="radio" name="item" value="0.000001">0.000001
+    </div>
+    <hr>
+    <div id="main3">
+      <div id="area3" class="area">
+        <p>　計算結果</p>
+        <hr>
+        <p>　計算回数</p>
+        <br>
+        <hr>
+        <p>　方程式の解</p>
+        <canvas class="myCanvas" id="graph3" width="460" height="460"></canvas>
+        <canvas class="myCanvas" id="graph3b" width="460" height="460"></canvas>
+      </div>
+    </div>
+    <div>
+      <div id="pane2">
+        <button type="button" id="start" class="normal">計算</button>
+        </div>
+    </div>
+  </div>
+  <script src="./js/nylon.js"></script>
+  <script src="./js/vcanvas.js"></script>
+  
+  <script src="./js/vbtimerm.js"></script>
+  <script src="nibun.js"></script>
+  <script src="newton.js"></script>
+  <p id="theory"></p>
+  <p id="answer"></p>
+  </div>
+</div>
+</body>
+</html>
